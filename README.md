@@ -83,16 +83,6 @@
 
 ---
 
-## 🚀 Featured Projects
-<details>
-<summary><b>Click to expand — key repos</b></summary>
-
-- **k8s-clean-ops** — repo with utilities & GitHub Actions for safe k8s deployments (production-ready manifests, rollout helpers).  
-- **gha-ci-templates** — reusable GitHub Actions workflows for infra, build, test, deploy.  
-- **aws-ops-helpers** — small CLIs & scripts to manage infra: snapshots, logs, secure role assumption.  
-- **container-hardening** — Dockerfile templates & scanning integration.
-
-</details>
 
 ---
 
