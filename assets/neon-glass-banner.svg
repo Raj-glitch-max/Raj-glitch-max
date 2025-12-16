@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05040f"/>
+      <stop offset="0.55" stop-color="#0b1030"/>
+      <stop offset="1" stop-color="#12002b"/>
+    </linearGradient>
+
+    <!-- Neon glow -->
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix"
+        values="1 0 0 0 0.45
+                0 1 0 0 0.10
+                0 0 1 0 0.95
+                0 0 0 1 0" result="purple"/>
+      <feMerge>
+        <feMergeNode in="purple"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Glass card shadow -->
+    <filter id="shadow" x="-20%" y="-30%" width="160%" height="180%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.55"/>
+    </filter>
+
+    <!-- Grain -->
+    <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="matrix"
+        values="0 0 0 0 0.35
+                0 0 0 0 0.35
+                0 0 0 0 0.35
+                0 0 0 0.18 0"/>
+    </filter>
+
+    <!-- Neon line gradient -->
+    <linearGradient id="neonLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.0"/>
+      <stop offset="0.25" stop-color="#22d3ee" stop-opacity="1"/>
+      <stop offset="0.7" stop-color="#a78bfa" stop-opacity="1"/>
+      <stop offset="1" stop-color="#a78bfa" stop-opacity="0.0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="320" fill="url(#bg)"/>
+
+  <!-- Soft blobs -->
+  <circle cx="220" cy="110" r="120" fill="#22d3ee" opacity="0.10"/>
+  <circle cx="980" cy="210" r="170" fill="#a78bfa" opacity="0.11"/>
+  <circle cx="820" cy="70" r="90" fill="#7c3aed" opacity="0.10"/>
+
+  <!-- Grain overlay -->
+  <rect width="1200" height="320" filter="url(#grain)" opacity="0.35"/>
+
+  <!-- Glass card -->
+  <g filter="url(#shadow)">
+    <rect x="90" y="70" width="1020" height="180" rx="26"
+          fill="#ffffff" opacity="0.08" stroke="#ffffff" stroke-opacity="0.22"/>
+    <rect x="110" y="90" width="980" height="140" rx="22"
+          fill="#0b0f26" opacity="0.22" stroke="#22d3ee" stroke-opacity="0.20"/>
+  </g>
+
+  <!-- Neon divider line -->
+  <rect x="160" y="210" width="880" height="3" fill="url(#neonLine)" opacity="0.95"/>
+
+  <!-- Title -->
+  <text x="160" y="150" fill="#e9e7ff" font-size="44" font-family="Inter, Segoe UI, Arial, sans-serif" filter="url(#glow)">
+    Raj Patil
+  </text>
+
+  <!-- Tagline -->
+  <text x="160" y="190" fill="#cbd5ff" font-size="22" font-family="Fira Code, Consolas, Menlo, monospace" opacity="0.95">
+    Systems obey. I orchestrate.
+  </text>
+
+  <!-- Corner label -->
+  <text x="1040" y="122" fill="#22d3ee" font-size="16" font-family="Fira Code, Consolas, Menlo, monospace" text-anchor="end" opacity="0.9">
+    Raj-glitch-max
+  </text>
+  <text x="1040" y="146" fill="#a78bfa" font-size="14" font-family="Fira Code, Consolas, Menlo, monospace" text-anchor="end" opacity="0.9">
+    neon • glass • ops
+  </text>
+</svg>
