@@ -1,7 +1,7 @@
-<![CDATA[<h1 align="center">Raj Patil</h1>
+<h1 align="center">Raj Patil</h1>
 
 <p align="center">
-  DevOps Engineer · Open Source · AWS · Kubernetes · Terraform
+  DevOps Engineer &nbsp;·&nbsp; Open Source &nbsp;·&nbsp; AWS &nbsp;·&nbsp; Kubernetes &nbsp;·&nbsp; Terraform
 </p>
 
 <p align="center">
@@ -26,10 +26,9 @@ I find real gaps in DevOps tooling and ship focused, composable CLI tools that s
 
 ## Projects
 
-### [tf-why](https://github.com/Raj-glitch-max/tf.why)
-**Terraform drift attribution via AWS CloudTrail**
+### [tf-why](https://github.com/Raj-glitch-max/tf.why) &nbsp;·&nbsp; `pip install tf-why`
 
-Terraform tells you something drifted. `tf-why` tells you who did it.
+> Terraform tells you something drifted. **tf-why tells you who did it.**
 
 ```bash
 terraform show -json plan.tfplan | tf-why
@@ -43,23 +42,24 @@ aws_security_group.web  (ingress rules changed)
 └── Event:        AuthorizeSecurityGroupIngress
 ```
 
-Reads Terraform plan JSON → queries CloudTrail → outputs exact actor, timestamp, and method. No database, no dashboard, no agents. 25+ AWS resource types supported.
-
-`pip install tf-why` · [PyPI](https://pypi.org/project/tf-why) · [GitHub](https://github.com/Raj-glitch-max/tf.why)
+Reads Terraform plan JSON → queries AWS CloudTrail → outputs the exact actor, timestamp, and method.
+No database. No dashboard. No agents. 25+ AWS resource types.
 
 ---
 
 ### [kubernetes-llm-incident-response-benchmark](https://github.com/Raj-glitch-max/kubernetes-llm-incident-response-benchmark)
-**Benchmarking LLMs on real Kubernetes incident diagnosis**
 
-A structured benchmark that injects real failure scenarios into a Kubernetes cluster and measures how accurately LLMs can diagnose, explain, and suggest remediation for each incident type.
+> Benchmarking LLMs on real Kubernetes incident diagnosis.
+
+Injects real failure scenarios into a live cluster and measures how accurately LLMs diagnose, explain, and suggest remediation — structured, repeatable, and scored.
 
 ---
 
 ### [AI-DRIVEN-self-healing-CICD](https://github.com/Raj-glitch-max/AI-DRIVEN-self-healing-CICD)
-**CI/CD pipeline that detects and heals its own failures**
 
-A GitHub Actions + LLM pipeline that monitors build failures, classifies root cause, and automatically applies or suggests fixes — closing the loop between failure detection and remediation.
+> A CI/CD pipeline that detects and heals its own failures.
+
+GitHub Actions + LLM pipeline that monitors build failures, classifies root cause, and automatically applies or suggests fixes — closing the loop between failure detection and remediation.
 
 ---
 
@@ -82,4 +82,3 @@ A GitHub Actions + LLM pipeline that monitors build failures, classifies root ca
   &nbsp;
   <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Raj-glitch-max&layout=compact&theme=github_dark&hide_border=true" alt="Top languages"/>
 </p>
-]]>
