@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 405" width="490" height="405">
+  <style>
+    .bg { fill: #0d1117; rx: 6px; stroke: #30363d; stroke-width: 1px; }
+    .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; font-size: 11px; fill: #8b949e; font-weight: 600; }
+    .term-text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; font-size: 11.5px; }
+    .user { fill: #58a6ff; font-weight: bold; }
+    .host { fill: #bc8cff; font-weight: bold; }
+    .at { fill: #c9d1d9; }
+    .sep { fill: #30363d; }
+    .key { font-weight: bold; }
+    .val { fill: #c9d1d9; }
+
+    @keyframes slideFade {
+      0% { opacity: 0; transform: translateY(6px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .anim-line {
+      animation: slideFade 0.4s ease-out forwards;
+    }
+    
+  </style>
+  <rect width="490" height="405" class="bg" />
+  <circle cx="16" cy="16" r="4.5" fill="#ff5f56" />
+  <circle cx="28" cy="16" r="4.5" fill="#ffbd2e" />
+  <circle cx="40" cy="16" r="4.5" fill="#27c93f" />
+  <text x="56" y="19" class="title">avi@github ~ neofetch</text>
+  <g transform="translate(18, 52)" class="anim-line" style="opacity: 0; animation-delay: 0.05s;">
+    <text x="0" y="0" class="term-text"><tspan class="user">avi</tspan><tspan class="at">@</tspan><tspan class="host">github</tspan></text>
+  </g>
+  <g transform="translate(18, 86)" class="anim-line" style="opacity: 0; animation-delay: 0.13s;">
+    <text x="0" y="0" class="term-text sep">------------------------------------------------</text>
+  </g>
+  <g transform="translate(18, 120)" class="anim-line" style="opacity: 0; animation-delay: 0.21s;">
+    <text x="0" y="0" class="term-text">
+      <tspan fill="#58a6ff" class="key">OS        </tspan>
+      <tspan class="sep">:&nbsp;</tspan>
+      <tspan class="val">Linux / DevOps Engine</tspan>
+    </text>
+  </g>
+  <g transform="translate(18, 154)" class="anim-line" style="opacity: 0; animation-delay: 0.29s;">
+    <text x="0" y="0" class="term-text">
+      <tspan fill="#79c0ff" class="key">Now       </tspan>
+      <tspan class="sep">:&nbsp;</tspan>
+      <tspan class="val">Building focused, composable CLI tools for cl...</tspan>
+    </text>
+  </g>
+  <g transform="translate(18, 188)" class="anim-line" style="opacity: 0; animation-delay: 0.37s;">
+    <text x="0" y="0" class="term-text">
+      <tspan fill="#d2a8ff" class="key">Prev      </tspan>
+      <tspan class="sep">:&nbsp;</tspan>
+      <tspan class="val">Production AWS & Kubernetes Infra, Automated ...</tspan>
+    </text>
+  </g>
+  <g transform="translate(18, 222)" class="anim-line" style="opacity: 0; animation-delay: 0.45s;">
+    <text x="0" y="0" class="term-text">
+      <tspan fill="#7ee787" class="key">Stack     </tspan>
+      <tspan class="sep">:&nbsp;</tspan>
+      <tspan class="val">AWS · Kubernetes · Terraform · Docker · Pytho...</tspan>
+    </text>
+  </g>
+  <g transform="translate(18, 256)" class="anim-line" style="opacity: 0; animation-delay: 0.53s;">
+    <text x="0" y="0" class="term-text">
+      <tspan fill="#ffa657" class="key">Highlights</tspan>
+      <tspan class="sep">:&nbsp;</tspan>
+      <tspan class="val">tf-why · K8s Incident Diagnosis Benchmark · A...</tspan>
+    </text>
+  </g>
+  <g transform="translate(18, 290)" class="anim-line" style="opacity: 0; animation-delay: 0.61s;">
+    <text x="0" y="0" class="term-text sep">------------------------------------------------</text>
+  </g>
+  <g transform="translate(18, 324)" class="anim-line" style="opacity: 0; animation-delay: 0.69s;">
+    <g transform="translate(0, 0)"><rect x="0" y="-10" width="18" height="12" rx="2" fill="#ff5f56" /><rect x="24" y="-10" width="18" height="12" rx="2" fill="#ffbd2e" /><rect x="48" y="-10" width="18" height="12" rx="2" fill="#27c93f" /><rect x="72" y="-10" width="18" height="12" rx="2" fill="#58a6ff" /><rect x="96" y="-10" width="18" height="12" rx="2" fill="#bc8cff" /><rect x="120" y="-10" width="18" height="12" rx="2" fill="#39d353" /></g>
+  </g>
+</svg>
