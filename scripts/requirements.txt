@@ -1,9 +1,6 @@
 requests==2.32.3
 beautifulsoup4==4.12.3
-# portrait-only (not needed by the daily workflow):
-pillow
-numpy
-opencv-python
-rembg
-onnxruntime
-
+Pillow==12.1.1
+numpy==1.26.4
+opencv-python==4.9.0.80
+rembg==2.0.50

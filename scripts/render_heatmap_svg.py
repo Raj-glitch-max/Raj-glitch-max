@@ -88,7 +88,7 @@ def render_heatmap_svg(json_path="data/contributions.json", output_path="contrib
     svg_lines.append('  <circle cx="16" cy="16" r="4.5" fill="#ff5f56" />')
     svg_lines.append('  <circle cx="28" cy="16" r="4.5" fill="#ffbd2e" />')
     svg_lines.append('  <circle cx="40" cy="16" r="4.5" fill="#27c93f" />')
-    svg_lines.append('  <text x="56" y="19" class="title">avi@github ~ $ ./contributions.sh</text>')
+    svg_lines.append('  <text x="56" y="19" class="title">raj@github ~ $ ./contributions.sh</text>')
     
     # Day labels (Mon=1, Wed=3, Fri=5)
     day_labels = [(1, "Mon"), (3, "Wed"), (5, "Fri")]
