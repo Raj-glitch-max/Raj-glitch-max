@@ -40,8 +40,9 @@ def image_to_ascii_grid(image_path, target_width=100):
     
     # Monospace aspect ratio adjustment (~0.5 char width/height ratio)
     aspect_ratio = h / w
-    target_height = int(target_width * aspect_ratio * 0.52)
-    target_height = max(20, min(80, target_height))  # Reasonable range ~50-55 lines
+    target_height = int(target_width * aspect_ratio * 0.50)
+    target_height = max(20, min(60, target_height))  # Reasonable range ~50-60 lines
+
     
     img_resized = img.resize((target_width, target_height), Image.Resampling.LANCZOS)
     pixels = np.array(img_resized)

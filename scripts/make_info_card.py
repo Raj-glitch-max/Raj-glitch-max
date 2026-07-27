@@ -6,7 +6,7 @@ def make_info_card(output_path="info-card.svg"):
     is_static = os.environ.get("STATIC") == "1"
     
     svg_width = 490
-    svg_height = 405
+    svg_height = 485
     
     # Information rows for neofetch card
     rows = [
@@ -20,6 +20,7 @@ def make_info_card(output_path="info-card.svg"):
         {"type": "sep", "val": "------------------------------------------------"},
         {"type": "colors", "val": ["#ff5f56", "#ffbd2e", "#27c93f", "#58a6ff", "#bc8cff", "#39d353"]}
     ]
+
     
     css_anim = "" if is_static else """
     @keyframes slideFade {
@@ -56,8 +57,9 @@ def make_info_card(output_path="info-card.svg"):
     svg_lines.append('  <text x="56" y="19" class="title">avi@github ~ neofetch</text>')
     
     # Content rows
-    start_y = 52
-    line_spacing = 34
+    start_y = 60
+    line_spacing = 43
+
     
     for idx, item in enumerate(rows):
         y_pos = start_y + (idx * line_spacing)
